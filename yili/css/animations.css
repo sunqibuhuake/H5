@@ -1,0 +1,146 @@
+.pt-page-moveToTop {
+    -webkit-animation: moveToTop .6s ease both;
+    animation: moveToTop .6s ease both;
+}
+
+.pt-page-moveFromBottom {
+    -webkit-animation: moveFromBottom .6s ease both;
+    animation: moveFromBottom .6s ease both;
+}
+
+.pt-page-moveToBottom {
+    -webkit-animation: moveToBottom .6s ease both;
+    animation: moveToBottom .6s ease both;
+}
+
+.pt-page-moveFromTop {
+    -webkit-animation: moveFromTop .6s ease both;
+    animation: moveFromTop .6s ease both;
+}
+
+.pt-page-scaleDown {
+    -webkit-animation: scaleDown .7s ease both;
+    animation: scaleDown .7s ease both;
+}
+
+.pt-page-fade {
+    -webkit-animation: fade .7s ease both;
+    animation: fade .7s ease both;
+}
+
+@-webkit-keyframes moveToTop {
+    from {
+    }
+
+    to {
+        -webkit-transform: translate3d(0,-100%,0);
+    }
+}
+
+@keyframes moveToTop {
+    from {
+    }
+
+    to {
+        -webkit-transform: translate3d(0,-100%,0);
+        transform: translate3d(0,-100%,0);
+    }
+}
+
+@-webkit-keyframes moveFromBottom {
+    from {
+        -webkit-transform: translate3d(0,100%,0);
+    }
+}
+
+@keyframes moveFromBottom {
+    from {
+        -webkit-transform: translate3d(0,100%,0);
+        transform: translate3d(0,100%,0);
+    }
+}
+
+@-webkit-keyframes moveToBottom {
+    from {
+    }
+
+    to {
+        -webkit-transform: translate3d(0,100%,0);
+    }
+}
+
+@keyframes moveToBottom {
+    from {
+    }
+
+    to {
+        -webkit-transform: translate3d(0,100%,0);
+        transform: translate3d(0,100%,0);
+    }
+}
+
+@-webkit-keyframes moveFromTop {
+    from {
+        -webkit-transform: translate3d(0,-100%,0);
+    }
+}
+
+@keyframes moveFromTop {
+    from {
+        -webkit-transform: translate3d(0,-100%,0);
+        transform: translate3d(0,-100%,0);
+    }
+}
+
+@-webkit-keyframes scaleDown {
+    from {
+    }
+
+    to {
+        opacity: 0;
+        -webkit-transform: scale(.6);
+    }
+}
+
+@keyframes scaleDown {
+    from {
+    }
+
+    to {
+        opacity: 0;
+        -webkit-transform: scale(.6);
+        transform: scale(.6);
+    }
+}
+
+@-webkit-keyframes fade {
+    from {
+    }
+
+    to {
+        opacity: .3;
+    }
+}
+
+@keyframes fade {
+    from {
+    }
+
+    to {
+        opacity: .3;
+    }
+}
+
+.page {
+    z-index: 0;
+    visibility: hidden;
+}
+
+.pt-page-current {
+    z-index: 1;
+    visibility: visible;
+}
+
+.pt-page-in {
+    z-index: 2!important;
+}

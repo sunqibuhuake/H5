@@ -1,0 +1,92 @@
+body{
+    font-family: Roboto,"Droid Sans",Helvetica,"Helvetica Neue","Heiti SC",sans-serif;
+}
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border: none;
+    outline: none;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+address,caption,cite,code,dfn,em,strong,th,td,var,i {
+    font-weight: normal;
+    font-style: normal;
+}
+ul, ol, nav {
+    list-style: none;
+}
+blockquote, q {
+    quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+a, ins {
+    text-decoration: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+caption, th, td {
+    text-align: left;
+}
+/*å¯èƒ½ä½œä¸ºæŒ‰é’®çš„æŽ§ä»¶*/
+div, a, img, input {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: none;
+}
+/*ç”¨æˆ·è¾“å…¥æ—¶,placeholderæ¶ˆå¤±*/
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder{
+    color:transparent;
+}
+/*å¸¸ç”¨class*/
+.clearfix:after {
+    visibility:hidden;
+    display:block;
+    font-size:0;
+    content:" ";
+    clear:both;
+    height:0;
+}
+.fn-hide{
+    display: none;
+}
+/*é•¿æŒ‰æ—¶ä¸è§¦å‘ç³»ç»Ÿçš„èœå•*/
+.fn-nocallout{
+    -webkit-touch-callout: none;
+}
+/*æ— æ³•é€‰æ‹©æ–‡æœ¬*/
+.fn-noselect{
+    -webkit-user-select: none;
+}
+/*ç¦æ­¢æ–‡å­—ç¼©æ”¾*/
+.fn-noadjust{
+    -webkit-text-size-adjust: none;
+}
+/*ç¦æ­¢æ‹–åŠ¨*/
+.fn-nodrag{
+    -webkit-user-drag: none;
+}
+/*é¡µé¢å®½åº¦é™åˆ¶*/
+.wrapper{
+    margin: 0 auto;
+    max-width: 768px;
+}
