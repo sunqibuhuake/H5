@@ -133,13 +133,13 @@ h2 img{
 }
 
 .G1 .current aside img:nth-child(1){
-	-webkit-animation:fadeInUp 1s 0s ease both;
+	-webkit-animation:fadeInUp 1s 0.5s ease both;
 }
 .G1 .current aside img:nth-child(2){
-	-webkit-animation:FadeIn 1s 1s ease both;
+	-webkit-animation:Scale  1s 1s ease both;
 }
 .G1 .current aside img:nth-child(3){
-	-webkit-animation:fadeInUp 1s 0.5s ease both;
+	-webkit-animation:FLeft 1s 1.5s ease both;
 }
 .G1 .current aside img:nth-child(4){
 	-webkit-animation:FRight 1s 1.5s ease both;
@@ -180,37 +180,38 @@ h2 img{
 	-webkit-animation:Scale 1s 1s ease both ;
 }
 .G2 .current aside img:nth-child(3){
-	-webkit-animation:Scale 1s 1.3s ease both ;
+	-webkit-animation:Scale 1s 1.5s ease both ;
 }
 .G2 .current aside img:nth-child(4){
-	-webkit-animation:Scale 1s 1.6s ease both ;
+	-webkit-animation:Scale 1s 2s ease both ;
 }
 .G2 .current aside img:nth-child(5){
-	-webkit-animation:Scale 1s 1.9s ease both ;
-}
-.G2 .current aside img:nth-child(6){
-	-webkit-animation:FadeIn 1s 2.5s forwards;
+	-webkit-animation:Scale 1s 2.5s ease both ;
 }
 .G2 .current aside img:nth-child(7){
-	-webkit-animation:fadeInUp 0.5s 3s ease both ;
+	-webkit-animation:popUp 0.5s 3.5s ease both ;
 }
 .G2 .current aside img:nth-child(8){
-	-webkit-animation:fadeInUp 0.5s 2.2s ease both ;
+	-webkit-animation:popUp 0.5s 3.7s ease both ;
 }
 .G2 .current aside img:nth-child(9){
-	-webkit-animation:fadeInUp 0.5s 2.4s ease both ;
+	-webkit-animation:popUp 0.5s 3.9s ease both ;
 }
 .G2 .current aside img:nth-child(10){
-	-webkit-animation:fadeInUp 0.5s 2.6s ease both ;
+	-webkit-animation:popUp 0.5s 4.1s ease both ;
 }
 .G2 .current aside img:nth-child(11){
-	-webkit-animation:fadeInUp 0.5s 2.8s ease both ;
+	-webkit-animation:popUp 0.5s 4.3s ease both ;
 }
 .G2 .current aside img:nth-child(12){
-	-webkit-animation:fadeInUp 0.5s 3s ease both ;
+	-webkit-animation:popUp 0.5s 4.5s ease both ;
 }
 .G2 .current aside img:nth-child(13){
-	-webkit-animation:fadeInUp 0.5s 3.2s ease both ;
+	-webkit-animation:popUp 0.5s 5s ease both ;
+}
+
+.G2 .current aside img:nth-child(6){
+	-webkit-animation:FadeIn 1s 5.5s forwards;
 }
 .G2 .wrapper .text {
 	width: 80%;
@@ -220,7 +221,7 @@ h2 img{
 	opacity: 0;
 }
 .G2 .wrapper.current .text {
-	-webkit-animation:fadeInUp 1s 3.7s ease both ;
+	-webkit-animation:fadeInUp 1s 5.5s ease both ;
 }
 
 
@@ -1643,3 +1644,32 @@ h2 img{
 		-webkit-transform-origin:64.8% 71.86%;
 	}
 }
+
+@-webkit-keyframes popUp {
+	from {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 10%, 0);
+		transform: translate3d(0, 10%, 0);
+	}
+
+	to {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+@keyframes popUp {
+	from {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 10%, 0);
+		transform: translate3d(0, 10%, 0);
+	}
+
+	to {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
